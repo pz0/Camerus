@@ -12,7 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        curl \
        gcc-10 \
        g++-10 \
-       cmake \
+       make \
        gdb
 
 RUN useradd -m dev --uid=1000 && echo "dev:dev" | chpasswd

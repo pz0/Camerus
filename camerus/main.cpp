@@ -1,10 +1,10 @@
 #include <iostream>
-#include <opencv2/core.hpp>
+#include "core/video_reader.h"
 
 
 int main(int argc, char *argv[])
 {
-    std::cout << "Camerus" << std::endl;
+    camerus::core::VideoReader reader = camerus::core::VideoReader("test");
 
     return 0;
 }

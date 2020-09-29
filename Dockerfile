@@ -13,10 +13,15 @@ RUN DEBIAN_FRONTEND=noninteractive apt -qq update && \
        gcc-10 \
        g++-10 \
        make \
+       cmake \
        gdb \
        pkg-config
 
 RUN apt -qq install -y libopencv-dev
+
+RUN apt -qq install -y python3 python3-pip python3-setuptools python3-wheel ninja-build
+
+RUN pip3 install meson
 
 RUN useradd -m dev --uid=1000 && echo "dev:dev" | chpasswd
 RUN chsh -s /bin/bash dev

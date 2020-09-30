@@ -34,4 +34,5 @@ RUN sudo chmod -R 777 /home/dev/*
 
 USER dev
 
+RUN cd camerus && meson build && cd build && meson compile
 

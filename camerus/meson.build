@@ -2,7 +2,7 @@ project(
     'camerus', 
     'cpp', 
     default_options : [
-        'cpp_std=c++11'
+        'cpp_std=c++2a'
     ]
 )
 
@@ -16,5 +16,6 @@ opencv = dependency('opencv4')
 executable(
     'camerus', 
     sources : src,
-    dependencies : opencv
+    dependencies : opencv,
+    link_args: ['-lpthread' ,'-ljpeg', '-lrt' ,'-pthread']
 )

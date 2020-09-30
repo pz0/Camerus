@@ -1,3 +1,4 @@
+#include <mutex>
 #include <thread>
 #include <iostream>
 #include <opencv2/core.hpp>
@@ -13,14 +14,14 @@ namespace camerus::core
             VideoReader(int index)
             {
                 finish_thread = false;
-                cap = cv::VideoCapture(index);
+                capture = cv::VideoCapture(index);
                 thread = std::thread(thread_task, this);
             }
             
             VideoReader(char *source)
             {
                 finish_thread = false;
-                cap = cv::VideoCapture(source);
+                capture = cv::VideoCapture(source);
                 thread = std::thread(thread_task, this);
             }
 
@@ -30,11 +31,18 @@ namespace camerus::core
                 thread.join();
             }
             
+            cv::Mat get_current_frame()
+            {
+                std::lock_guard<std::mutex> lock(mtx);
+                return frame;
+            }
+
             void thread_task_body()
             {
                 while(!finish_thread)
                 {
-                    cap.read(mat);
+                    std::lock_guard<std::mutex> lock(mtx);
+                    capture.read(frame);
                     camerus::core::logger::debug("New Frame");
                 }
             }
@@ -44,9 +52,12 @@ namespace camerus::core
                 ptr->thread_task_body();
             }
 
-            cv::VideoCapture cap;
-            cv::Mat mat;
+            cv::VideoCapture capture;
+            cv::Mat frame;
+
+
             bool finish_thread;
             std::thread thread;
+            std::mutex mtx;
     };
 }

@@ -35,7 +35,7 @@ namespace camerus::core
                 while(!finish_thread)
                 {
                     cap.read(mat);
-                    camerus::core::logger::print_log("DEBUG", "New Frame");
+                    camerus::core::logger::debug("New Frame");
                 }
             }
         private:

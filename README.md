@@ -9,25 +9,25 @@ It will be an Camera Monitoring Framework written in C++.
         <td>Feature</td><td>State</td>
     </th>
     <tr>
-        <td>Video / Live Stream Reader</td><td>DONE</td>
+        <td>1</td><td>Video / Live Stream Reader</td><td>DONE</td>
     </tr>
     <tr>
-        <td>Background subtraction</td><td>DONE</td>
+        <td>2</td><td>Background subtraction</td><td>DONE</td>
     </tr>
     <tr>
-        <td>Motion Detection</td><td>IN PROGRESS</td>
+        <td>3</td><td>Motion Detection</td><td>IN PROGRESS</td>
     </tr>
     <tr>
-        <td>Objects Tracking</td><td>TODO</td>
+        <td>4</td><td>Objects Tracking</td><td>TODO</td>
     </tr>
     <tr>
-        <td>Clustering Algorithms</td><td>TODO</td>
+        <td>5</td><td>Clustering Algorithms</td><td>TODO</td>
     </tr>
     <tr>
-        <td>RestAPI / WebSocket Interface</td><td>TODO</td>
+        <td>6</td><td>RestAPI / WebSocket Interface</td><td>TODO</td>
     </tr>
     <tr>
-        <td>...</td><td>TODO</td>
+        <td>7</td><td>...</td><td>TODO</td>
     </tr>
 </table>
 

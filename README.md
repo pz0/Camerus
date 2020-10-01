@@ -5,11 +5,12 @@ It will be an Camera Monitoring Framework written in C++.
 
 <h2>Project milestones</h2>
 <ul>
-<li>Video / Live Stream Reader<span>[DONE]</span></li>
-<li>Motion Detection</li>
-<li>Objects Tracking</li>
-<li>Clustering Algorithms</li>
-<li>RestAPI / WebSocket Interface</li>
+<li><span>[DONE]</span>Video / Live Stream Reader,</li>
+<li><span>[DONE]</span>Background subtraction,</li>
+<li>Motion Detection,</li>
+<li>Objects Tracking,</li>
+<li>Clustering Algorithms,</li>
+<li>RestAPI / WebSocket Interface,</li>
 <li>etc.</li>
 </ul>
 

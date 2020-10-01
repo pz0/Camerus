@@ -14,4 +14,4 @@ It will be an Camera Monitoring Framework written in C++.
 </ul>
 
 <h2>Current project results</h2>
-![res_gif](https://github.com/pz0/Camerus/blob/master/resources/res1.gif)
+<img src="https://github.com/pz0/Camerus/blob/master/resources/res1.gif"></img>

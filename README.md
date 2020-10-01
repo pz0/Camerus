@@ -12,3 +12,6 @@ It will be an Camera Monitoring Framework written in C++.
 <li>RestAPI / WebSocket Interface</li>
 <li>etc.</li>
 </ul>
+
+<h2>Current project results</h2>
+![res1gif](https://github.com/pz0/Camerus/blob/master/logo.png)

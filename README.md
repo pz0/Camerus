@@ -33,7 +33,8 @@ It will be an Camera Monitoring Framework written in C++.
 </table>
 
 <h2>Project Examples</h2>
-<p>Background Subtraction</p>
+<h3>Background Subtraction</h3>
+<p>From left: input frames, median blur filter, background subtraction</p>
 <img src="https://github.com/pz0/Camerus/blob/master/resources/res1.gif"></img>
 
 <h1>How to start</h1>

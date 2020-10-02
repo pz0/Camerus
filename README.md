@@ -40,7 +40,7 @@ It will be an Camera Monitoring Framework written in C++.
 <p>Below is just an example how to start current version of camerus build.</p>
 <ol>
     <li>Clone the project / Make a fork</li>
-    <li>Start the docker build process
+    <li>Start the docker build process (docker building process starts also meson which builds a camerus binary, check Dockerfile)
         <ul>
             <li>docker build -t camerus .</li>
         </ul>

@@ -34,8 +34,10 @@ It will be an Camera Monitoring Framework written in C++.
 
 <h2>Project Examples</h2>
 <h3>Background Subtraction</h3>
-<p>From left: input frames, median blur filter, background subtraction</p>
+<p>From left: input frame (with gaussian blur) -> background subtraction -> median blur</p>
 <img src="https://github.com/pz0/Camerus/blob/master/resources/res1.gif"></img>
+<p>From left: background subtracted frame -> edges detection -> edges on input frame</p>
+<img src="https://github.com/pz0/Camerus/blob/master/resources/res2.gif"></img>
 
 <h1>How to start</h1>
 <p>Below is just an example how to start current version of camerus build.</p>

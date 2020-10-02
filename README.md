@@ -1,9 +1,10 @@
-![camerus_logo](https://github.com/pz0/Camerus/blob/master/logo.png)
+<img src="https://github.com/pz0/Camerus/blob/master/logo.png"></img>
 
-<h2>Project description</h2>
+
+<h1>Short project description</h1>
 It will be an Camera Monitoring Framework written in C++.
 
-<h2>Project milestones</h2>
+<h2>Upcoming Features</h2>
 <table>
     <th>
         <td>Feature</td><td>State</td>
@@ -31,5 +32,36 @@ It will be an Camera Monitoring Framework written in C++.
     </tr>
 </table>
 
-<h2>Current project results</h2>
+<h2>Project Examples</h2>
+<p>Background Subtraction</p>
 <img src="https://github.com/pz0/Camerus/blob/master/resources/res1.gif"></img>
+
+<h1>How to start</h1>
+<p>Below is just an example how to start current version of camerus build.</p>
+<ol>
+    <li>Clone the project / Make a fork</li>
+    <li>Start the docker build process
+        <ul>
+            <li>docker build -t camerus .</li>
+        </ul>
+    </li>
+    <li>Start the docker
+        <ul>
+            <li>docker run -it --network=host -v [path_to_camerus_resources_directory]:/tmp/resources camerus
+        </ul>
+    </li>
+    <li>Start camerus binary
+        <ul>
+            <li>./camerus/build/camerus</li>
+        </ul>
+    </li>
+    <li>Result of camerus processing should be in [path_to_camerus_resources_directory]</li>
+    <li>
+</ol>
+
+<h1>Additional info</h1>
+<ul>
+    <li>Feel free to create issues</li>
+    <li>Contribution is welcome</li>
+</ul>
+

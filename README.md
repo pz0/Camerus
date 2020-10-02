@@ -56,7 +56,6 @@ It will be an Camera Monitoring Framework written in C++.
         </ul>
     </li>
     <li>Result of camerus processing should be in [path_to_camerus_resources_directory]</li>
-    <li>
 </ol>
 
 <h1>Additional info</h1>

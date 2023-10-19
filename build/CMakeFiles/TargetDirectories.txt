@@ -1,0 +1,6 @@
+/workspaces/Camerus/build/CMakeFiles/camerus.dir
+/workspaces/Camerus/build/CMakeFiles/edit_cache.dir
+/workspaces/Camerus/build/CMakeFiles/rebuild_cache.dir
+/workspaces/Camerus/build/core/CMakeFiles/camerus_core.dir
+/workspaces/Camerus/build/core/CMakeFiles/edit_cache.dir
+/workspaces/Camerus/build/core/CMakeFiles/rebuild_cache.dir

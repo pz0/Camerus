@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/workspaces/Camerus/build",
+  "command": "g++ -I/workspaces/Camerus/core/include -isystem /usr/include/opencv4 -g -o CMakeFiles/camerus.dir/main.cpp.o -c /workspaces/Camerus/main.cpp",
+  "file": "/workspaces/Camerus/main.cpp"
+},
+{
+  "directory": "/workspaces/Camerus/build",
+  "command": "g++ -I/workspaces/Camerus/core/include -isystem /usr/include/opencv4 -g -o core/CMakeFiles/camerus_core.dir/src/concatenation.cpp.o -c /workspaces/Camerus/core/src/concatenation.cpp",
+  "file": "/workspaces/Camerus/core/src/concatenation.cpp"
+},
+{
+  "directory": "/workspaces/Camerus/build",
+  "command": "g++ -I/workspaces/Camerus/core/include -isystem /usr/include/opencv4 -g -o core/CMakeFiles/camerus_core.dir/src/video_creator.cpp.o -c /workspaces/Camerus/core/src/video_creator.cpp",
+  "file": "/workspaces/Camerus/core/src/video_creator.cpp"
+},
+{
+  "directory": "/workspaces/Camerus/build",
+  "command": "g++ -I/workspaces/Camerus/core/include -isystem /usr/include/opencv4 -g -o core/CMakeFiles/camerus_core.dir/src/filters.cpp.o -c /workspaces/Camerus/core/src/filters.cpp",
+  "file": "/workspaces/Camerus/core/src/filters.cpp"
+},
+{
+  "directory": "/workspaces/Camerus/build",
+  "command": "g++ -I/workspaces/Camerus/core/include -isystem /usr/include/opencv4 -g -o core/CMakeFiles/camerus_core.dir/src/contours.cpp.o -c /workspaces/Camerus/core/src/contours.cpp",
+  "file": "/workspaces/Camerus/core/src/contours.cpp"
+},
+{
+  "directory": "/workspaces/Camerus/build",
+  "command": "g++ -I/workspaces/Camerus/core/include -isystem /usr/include/opencv4 -g -o core/CMakeFiles/camerus_core.dir/src/video_reader.cpp.o -c /workspaces/Camerus/core/src/video_reader.cpp",
+  "file": "/workspaces/Camerus/core/src/video_reader.cpp"
+}
+]

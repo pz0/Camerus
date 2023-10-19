@@ -17,10 +17,10 @@ public:
     
     ~VideoReader();
 
-    cv::Mat get_current_frame();
-    void thread_task_body();
+    cv::Mat GetCurrentFrame();
+    void ThreadTaskBody();
 private:
-    static void thread_task(VideoReader *ptr);
+    static void ThreadTask(VideoReader *ptr);
 
     cv::VideoCapture capture;
     cv::Mat frame;

@@ -6,7 +6,7 @@ namespace core
 {
 namespace processing
 {
-std::vector<cv::Rect> Contours::get_bouding_rects(cv::Mat const& source) {
+std::vector<cv::Rect> Contours::GetBoudingRects(cv::Mat const& source) {
     cv::cvtColor(source, source, cv::COLOR_RGB2GRAY);
 
     std::vector<std::vector<cv::Point>> cnts;
@@ -26,7 +26,7 @@ std::vector<cv::Rect> Contours::get_bouding_rects(cv::Mat const& source) {
     return rects;
 }
 
-cv::Mat Contours::draw_bounding_rects_on(cv::Mat &out, std::vector<cv::Rect> const& rects) {
+void Contours::DrawBoundingRectsOn(cv::Mat &out, std::vector<cv::Rect> const& rects) {
     cv::RNG rng;
     for (int i = 0; i < rects.size(); i++)
     {

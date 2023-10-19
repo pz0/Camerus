@@ -11,8 +11,8 @@ namespace processing
 {
 class Contours {
 public:
-    static std::vector<cv::Rect> get_bouding_rects(cv::Mat const& source);
-    static cv::Mat draw_bounding_rects_on(cv::Mat &out, std::vector<cv::Rect> const& rects);
+    static std::vector<cv::Rect> GetBoudingRects(cv::Mat const& source);
+    static void DrawBoundingRectsOn(cv::Mat &out, std::vector<cv::Rect> const& rects);
 };
 }
 }

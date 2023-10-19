@@ -13,7 +13,7 @@ VideoReader::VideoReader(int index, bool live) {
     if (live)
     {
         finish_thread = false;
-        thread = std::thread(thread_task, this);
+        thread = std::thread(ThreadTask, this);
     }
 }
 
@@ -24,7 +24,7 @@ VideoReader::VideoReader(char *source, bool live) {
     if (live)
     {
         finish_thread = false;
-        thread = std::thread(thread_task, this);
+        thread = std::thread(ThreadTask, this);
     }
 }
 
@@ -36,7 +36,7 @@ VideoReader::~VideoReader() {
     }
 }
 
-cv::Mat VideoReader::get_current_frame() {
+cv::Mat VideoReader::GetCurrentFrame() {
     std::lock_guard<std::mutex> lock(mtx);
 
     if (!live_stream)
@@ -47,7 +47,7 @@ cv::Mat VideoReader::get_current_frame() {
     return frame;
 }
 
-void VideoReader::thread_task_body() {
+void VideoReader::ThreadTaskBody() {
     while(!finish_thread)
     {
         std::lock_guard<std::mutex> lock(mtx);
@@ -55,8 +55,8 @@ void VideoReader::thread_task_body() {
     }
 }
 
-void VideoReader::thread_task(VideoReader *ptr) {
-    ptr->thread_task_body();
+void VideoReader::ThreadTask(VideoReader *ptr) {
+    ptr->ThreadTaskBody();
 }
 }
 }

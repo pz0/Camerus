@@ -11,7 +11,7 @@ class VideoCreator {
 public:
     VideoCreator(char *filename, int const width, int const height, int fps);
 
-    void write(cv::Mat const& frame);
+    void Write(cv::Mat const& frame);
 private:
     cv::VideoWriter writer_;
 };
